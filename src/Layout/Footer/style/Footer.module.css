@@ -1,0 +1,45 @@
+.details{
+    background: #f4f4f4;
+    height: 100%;
+}
+.info{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+}
+.info li{
+    font-size: 15px;
+    padding: 3px 2px;
+    color: #666;
+    list-style-type: none;
+    margin-left: 15px;
+}
+.info svg{
+    font-size: 20px;
+}
+.link{
+    justify-content: space-around;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+
+}
+.linkcontnt{
+    color: #666;
+    list-style-type: none;
+}
+.linkcontnt li{
+    font-size: 15px;
+    font-weight: 150px;
+    padding: 5px 0;
+}
+.linkcontnt li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.title{
+    font-weight: 200px;
+}
