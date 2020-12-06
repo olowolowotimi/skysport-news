@@ -6,10 +6,10 @@ import { FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
     return(
-        <details className={cssStyle.details}>
+        <div className={cssStyle.details}>
             <div className={cssStyle.info}>
             <li>
-            <FaTwitter /> FaTwitter
+            <FaTwitter /> Twitter
             </li>
             <li>
                 <FaFacebook /> Facebook
@@ -64,7 +64,7 @@ const Footer = () => {
                   <li>Advertise with US</li>
                   <li>Sky TV Accessories</li>
               </div>
-              <div className={cssSstyles.lower}>
+              <div className={cssStyle.lower}>
                   
                       
                 
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
 
 
-        </details>
+        </div>
     )
 }
 export default Footer

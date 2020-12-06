@@ -14,6 +14,7 @@
     color: #666;
     list-style-type: none;
     margin-left: 15px;
+
 }
 .info svg{
     font-size: 20px;
@@ -30,15 +31,19 @@
 .linkcontnt{
     color: #666;
     list-style-type: none;
+    font-family: 'SkyTextReg' sans-serif;
 }
 .linkcontnt li{
     font-size: 15px;
     font-weight: 150px;
     padding: 5px 0;
+    text-decoration: none;
+   
 }
 .linkcontnt li:hover{
     cursor: pointer;
     text-decoration: underline;
+    background: #c0bfbf;
 }
 .title{
     font-weight: 200px;

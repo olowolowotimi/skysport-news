@@ -5,16 +5,30 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
+import { Menu, Search } from '@material-ui/Icons';
+import Container from '@material-ui/core/Container'
+import { RiUserFill } from 'react-icons/ri';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: "1",
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
+  header: {
+    backgroundImage: "linear-gradient(0deg, rgba(0,0,0,0.1) 0, rgba(0,0,0,0) 76%),linear-gradient(to right, #002672 0%, #002672 77px, #e10000 77px, #e10000 100%)",
+    backgroundOrigin: "content-box",
+    backgroundRepeat: "no-repeat",
+    // maxWidth: "1024px",
+    margin: "0 auto",
+    display: "table",
+    width: "100%",
+    tableLayout: "fixed",
+    borderCollapse: "separate",
+    // padding: "0 14px",
+    boxSizing: "border-box",
+
   },
+  
   title: {
     flexGrow: 1,
     display: 'none',
@@ -35,6 +49,14 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(1),
       width: 'auto',
     },
+  },
+  img: {
+    height: "100px",
+    width: "170px",
+    // display: "flex",
+    // position: "relative",
+    // zIndex: "2",
+    // justifyContent: "flex-start",
   },
   searchIcon: {
     padding: theme.spacing(0, 2),
@@ -68,22 +90,17 @@ export default function SearchAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Sky Sport
-          </Typography>
+      <AppBar  className={classes.header}>
+        <Container maxWidth="md">
+
+                <Toolbar>
+          
+          <img src="/static/img/skysporttrans.svg" alt="" className={classes.img}/>
+          
+          
           <div className={classes.search}>
             <div className={classes.searchIcon}>
-              <SearchIcon />
+              <Search />
             </div>
             <InputBase
               placeholder="Search…"
@@ -95,6 +112,7 @@ export default function SearchAppBar() {
             />
           </div>
         </Toolbar>
+        </Container>
       </AppBar>
     </div>
   );
