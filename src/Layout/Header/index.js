@@ -1,5 +1,4 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
@@ -14,20 +13,13 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: "1",
   },
-  header: {
-    backgroundImage: "linear-gradient(0deg, rgba(0,0,0,0.1) 0, rgba(0,0,0,0) 76%),linear-gradient(to right, #002672 0%, #002672 77px, #e10000 77px, #e10000 100%)",
-    backgroundOrigin: "content-box",
-    backgroundRepeat: "no-repeat",
-    // maxWidth: "1024px",
-    margin: "0 auto",
-    // display: "table",
-    width: "100%",
-    // tableLayout: "fixed",
-    borderCollapse: "separate",
-    // padding: "0 14px",
-    boxSizing: "border-box",
+ header: {
+      border: "1px solid red",
+      backgroundImage: "linear-gradient(0deg,rgba(0,0,0,.1),transparent 50%),linear-gradient(90deg,#002672 0,#002672 53px,#e10000 0,#e10000)", 
+      
 
-  },
+
+ },
   
   title: {
     flexGrow: 1,
@@ -51,8 +43,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   img: {
-    height: "100px",
-    width: "150px",
+    height: "30px",
+    width: "95px",
     // display: "flex",
     // position: "relative",
     // zIndex: "2",
@@ -89,8 +81,7 @@ export default function SearchAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar  className={classes.header}>
+    <div className={classes.header}>
         <Container maxWidth="md">
 
                 <Toolbar>
@@ -113,7 +104,6 @@ export default function SearchAppBar() {
           </div>
         </Toolbar>
         </Container>
-      </AppBar>
     </div>
   );
 }
