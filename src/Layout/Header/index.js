@@ -4,7 +4,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
-import { Menu, Search } from '@material-ui/Icons';
+import { Menu, Search } from '@material-ui/icons';
 import Container from '@material-ui/core/Container'
 import { RiUserFill } from 'react-icons/ri';
 
