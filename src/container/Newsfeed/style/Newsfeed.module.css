@@ -1,0 +1,15 @@
+.biggerCard{
+    margin-top: 3%;
+    padding: 80px 100px;
+    /*width: 250%;
+    height: 200%;*/
+}
+#newscontainer{
+    margin-top: 5%;
+    padding: 60px 100px;  
+}
+.sectiontwo{
+    padding: 60px 100px;
+   margin: 35px 20px;
+    display: flex;
+}
