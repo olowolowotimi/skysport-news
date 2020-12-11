@@ -1,0 +1,65 @@
+#body{
+    display: flex;
+    height: 100px;
+}
+.blue{
+    background-color: rgb(20, 20, 124);
+    width: 20%;
+    z-index: 200;
+    
+}
+.blueImg{
+    width: 250px;
+   margin: 20px 180px;
+    
+}
+.red{
+    background-color: rgb(243, 26, 26);
+    width: 80%;
+}
+.content{
+    display: flex;
+    color: #fff;
+    margin: 20px 300px;
+    justify-content: space-between;
+
+}
+.content input{
+    background-color: red;
+    border: 1px solid white;
+    height: 25px;
+    width: 200px;
+}
+.content input::placeholder{
+    color: white;
+}
+.content span{
+    position: absolute;
+    left: 1000px;
+    
+}
+.subHead{
+    display:flex;
+    justify-content: space-between;
+    margin: 6px 25px; 
+    padding: 5px 20px;
+}
+.subHead ul{
+    display: flex;
+    list-style-type: none;
+    cursor: pointer; 
+     
+}
+.subHead ul li{
+    padding: 5px 15px;
+    font-size: 15px;
+
+}
+.subHead Button{
+    height: 30px;
+    width: 125px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: rgb(184, 21, 21);
+}
